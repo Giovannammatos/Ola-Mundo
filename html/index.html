@@ -1,0 +1,184 @@
+<!--ATALHOS TECLADO-->
+<!--digitando ! e dando enter o vscode ja preenche o codigo base
+alt+click coloca varios cursores
+ctrl+shift+P, enter e nome tag para envelopar um texto
+ctrl+espaço mostra lista de opção de link-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="fav icon" href="midias/favicon.ico" type="image/x-icon">
+    <title>Jorge.com</title>
+</head>
+<body>
+<!--Formatação de textos e hierarquia de titulos -->    
+    <h1>Curso em video html5</h1>
+    <hr><!--quebra entre elementos de nivel de paragrafo(risquinho) -->
+    <h1>Título principal: h1</h1>
+    <h2>Sub título: h2</h2>
+    <h3>Título: h3</h3>
+    <h4>Título: h4</h4>
+    <h5>Título: h5</h5>
+    <h6>Título: h6</h6>
+
+    <p>paragrafo 1</p>
+    <p>paragrafo 2</p>
+    <p>
+        termo em <strong>destaque,</strong><br><!--'breakrow' quebra de linha-->
+        termo em <em>itálico,</em><br>
+        termo <mark>marcado,</mark><br>
+        com quebra de linha.
+    </p>
+    <p>
+        textao num tem, ai so metendo um css<br>
+        <small>textinho</small>
+    </p>
+    <p>
+        termo riscado: <del>odeio gays</del><br>
+        termo inserido: <ins>nao entendi pq inserido</ins>
+    </p>
+    <p>
+        sob<sup>e</sup> e desc<sub>e</sub>
+    </p>
+    <p>
+        <pre><!--preformatado: mantem espaços e outras formatações do texto-->
+            <code><!--monoespaçamento-->
+        sexualidade = input("Tu é gay?")
+        if sexualidade == "sim":
+            print("La ele")
+        else:
+        print("foda-se")
+            </code>
+        </pre>
+    </p>
+
+    <!--citação simples-->
+    <q>A vida é trem bala parceiro</q>
+
+    <!--citação em bloco--> 
+    <blockquote cite="https://genius.com/Udr-aviao-brutal-do-scat-lyrics">
+        Onde um velho alemão tava sentado, sacanagem
+        Sorriu pra mim e sussurou "Wöllen sie spaz haben?"
+        Não sei o que ele quis dizer, mas o cara me assustou
+        Pôs o dedo na garganta e começou
+        Vomitou um lance escuro no meu colo (<abbr title="União Democrática Ruralista">UDR</abbr>, 2004)
+    </blockquote>
+
+    <!--inverte a escrita-->
+    <bdo dir="rtl">entendi nada</bdo>
+
+    <!--caracteres reservados no html, para serem exibidos devem seguir a seguinte base: &entityname; -->
+    <p>
+        &lt; &gt; &pound; &map;
+    </p>
+
+    <!--Para exibir emojis, basta seguir a mesma logica de antes, & nome ; -->
+    <p>
+        &#x1F920;
+        &#x1F913;<!--#x indica um valor em hexadecimal-->
+    </p>
+<!--Mídias-->
+    <h1>inserindo midias</h1>
+    <h2>imagens</h2>
+    <h3>imagem inserida por link:</h3>
+        <img src="https://tr.rbxcdn.com/180DAY-98d2bc2ad62bad4f278b8ca441586941/420/420/LayeredAccessory/Webp/noFilter" alt="nerdface">
+    <h3>imagem inserida indicando caminho no computador:</h3>
+        <img src="midias/dank.png" alt="smileface"><!--ATENÇÃO NA DIREÇÃO DA BARRA-->
+
+    <h2>imagens dinamicas</h2>
+        <picture>
+            <source media="(max-width: 750px)" srcset="midias/p.jpg">
+            <source media="(max-width: 1050px)" srcset="midias/m.jpg">
+            <img src="midias/g.jpg" alt="img flexivel">
+        </picture>
+    <h2>audio</h2>
+    <audio src="midias/monster-inc.mp3" autoplay controls loop></audio>
+    <audio controls>
+        <source src="midias/monster-inc.mp3" type="audio/mpeg">
+    </audio>
+    
+    <h2>vídeos</h2>
+    <h3>video caminho do computador</h3>
+    <video src="midias/Gravação de Tela 2024-09-02 114247.mp4" controls></video>
+    <h3>video externo</h3>
+    <ul>
+        <li>youtube: <iframe width="560" height="315" src="https://www.youtube.com/embed/bv3hXOCfdAw?si=2LVKsysRGTWhpsZd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+
+        <li>vimeo: <iframe width="560" height="315"frameborder="0"  src="https://player.vimeo.com/video/111695602?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" title="cats"></iframe><src="https://player.vimeo.com/api/player.js"></li>
+    </ul>
+
+<!--Listas-->
+    <h1>Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="a">Top piores listas
+        <li>lista de compras</li>
+        <li>lista de listras</li>
+        <li>lista de atividades</li>
+        <li>lista de listar</li>
+    </ol>
+
+    <h2>Listas nao ordenadas</h2>
+    <ul type="circle">top 
+        <li>Top</li>
+        <li>TOP</li>
+        <li>top</li>
+        <li>ToP</li>
+    </ul>
+
+    <h2>Listas mistas</h2>
+    <ol><h3>top frutas para fazer suco</h3>
+        <li>laranja</li>
+        <ul>
+            <li>laranja bahia</li>
+            <li>laranja serra d'gua</li>
+        </ul>
+        <li>morango</li>
+        <ol type="i">
+            <li>moango maduro</li>
+            <li>moango mais ou menos maduro</li>
+        </ol>  
+    </ol>
+
+    <bdo dir="rtl">
+        <ul><h3>top frutas para fazer suco parte 2</h3>
+            <li>laranja</li>
+            <ul>
+                <li>laranja bahia</li>
+                <li>laranja serra d'gua</li>
+            </ul>
+            <li>morango</li>
+            <ol type="i" start="3">
+                <li>morango maduro</li>
+                <li>morango mais ou menos maduro</li>
+            </ol>
+        </ul>
+    </bdo>
+
+    <h2>Lista de definição</h2>
+    <dt>Banana</dt><!--titulo dicionario-->
+    <dd>Fruta amarela, que da em bananeira; Pessoa sem atitude <br>
+        "Fulano é um banana!"
+    </dd><!--definição dicionario-->
+<!--Links-->
+    <h1>Links</h1>
+    <h2>links externos</h2>
+    <!--sobrepoem com a janela atual--> 
+    <p>
+        <a href="https://www.youtube.com/watch?v=bv3hXOCfdAw&pp=ygUIMTBoIGNhdHM%3D">10 HORAS DE VIDEOS DE GATOS</a>     
+    </p>
+    <!--abre link em outra aba-->
+    <p>
+        <a href="https://www.youtube.com/watch?v=bv3hXOCfdAw&pp=ygUIMTBoIGNhdHM%3D" target="_blank" rel="external">10 horas de videos de gato parte 2</a>
+    </p>
+
+    <h2>links internos</h2>
+    <a href="dankcat.html" rel="next">PRÓXIMA PÁGINA</a>
+
+    <h2>links para download</h2><!--consultar lista para formato do type https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    <ul>
+        <li><a href="arquivos/05-estruturas-repetitivas-exercicios.pdf" download="05-estruturas-repetitivas-exercicios.pdf" type="application/pdf">download arquivo .pdf</a></li>
+        <li><a href="arquivos/favicon.zip" download="favicon.zip" type="application/zip">download arquivo .zip</a></li>
+    </ul>
+</body>
+</html>
